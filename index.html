@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pira — Short Character Stories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:'Inter',sans-serif;
+background: radial-gradient(circle at 20% 20%,#e9ffff,#f7f7ff 60%);
+color:#1a1a1a;
+line-height:1.6;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+backdrop-filter: blur(10px);
+background:rgba(255,255,255,0.7);
+border-bottom:1px solid rgba(0,0,0,0.05);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+z-index:10;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+background:linear-gradient(45deg,#23c9c9,#ff7a6c);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+margin-left:28px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+position:relative;
+}
+
+nav a:after{
+content:"";
+position:absolute;
+width:0;
+height:2px;
+bottom:-4px;
+left:0;
+background:#23c9c9;
+transition:.3s;
+}
+
+nav a:hover:after{width:100%}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding-top:120px;
+}
+
+.hero img{
+width:320px;
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+100%{transform:translateY(0)}
+}
+
+.hero h1{
+font-size:64px;
+margin-top:20px;
+letter-spacing:-1px;
+}
+
+.hero span{
+background:linear-gradient(45deg,#23c9c9,#ff7a6c);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+max-width:600px;
+opacity:.8;
+}
+
+section{
+padding:120px 12%;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+font-size:18px;
+text-align:center;
+}
+
+.videos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 30px 60px rgba(0,0,0,0.12);
+}
+
+.card{
+  display:flex;
+  flex-direction:column;
+}
+
+.card h3{
+  margin-top:auto;
+}
+
+.docs{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.doc-btn{
+padding:18px 30px;
+border-radius:12px;
+background:linear-gradient(45deg,#23c9c9,#ff7a6c);
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.doc-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact{
+text-align:center;
+font-size:20px;
+}
+
+footer{
+margin-top:100px;
+padding:40px;
+text-align:center;
+background:#f5f7fa;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Pira</div>
+<nav>
+<a href="#about">About</a>
+<a href="#works">Works</a>
+<a href="#docs">Documents</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<img src="character.png" alt="character">
+
+<h1>Short Character <span>Stories</span></h1>
+
+<p>
+Animation project by <b>Yuliia Antonova</b> — Interactive Digital Art & Design.
+A series of short emotional animations designed for social media storytelling.
+</p>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About The Project</h2>
+
+<p class="about">
+This project explores short-form character animation designed for modern social media platforms such as TikTok and Instagram Reels. Each animation lasts around 10–15 seconds and focuses on visual storytelling through expressive character animation.
+
+The project demonstrates how simple narrative moments and strong character performance can communicate emotion effectively within a very short duration.
+
+All animations were created using Adobe After Effects with assets prepared in Photoshop.
+</p>
+
+</section>
+
+<section id="works">
+
+<h2 class="section-title">Animations</h2>
+
+<div class="videos">
+
+<div class="card">
+<video controls>
+<source src="cartoon1.mp4" type="video/mp4">
+</video>
+<h3>Morning Tea</h3>
+<h3>A calm and quiet moment.</h3>
+</div>
+
+<div class="card">
+<video controls>
+<source src="cartoon2.mp4" type="video/mp4">
+</video>
+<h3>Passing By</h3>
+<h3>A brief interaction with the viewer</h3>
+</div>
+
+<div class="card">
+<video controls>
+<source src="cartoon3.mp4" type="video/mp4">
+</video>
+<h3>One Page Later </h3>
+<h3>A shift from happiness to sadness. </h3>
+</div>
+
+
+<div class="card">
+<video controls>
+<source src="cartoon4.mp4" type="video/mp4">
+</video>
+<h3>Peek. </h3>
+    <h3> A playful moment of hiding and appearing. </h3>
+</div>
+
+
+<div class="card">
+<video controls>
+<source src="cartoon5.mp4" type="video/mp4">
+</video>
+<h3>Little Happiness</h3>
+<h3>A small moment of joy. </h3>
+
+</div>
+</div>
+
+</section>
+
+<section id="docs">
+
+<h2 class="section-title">Project Documents</h2>
+
+<div class="docs">
+
+<a class="doc-btn" href="documents/planning-research.pdf" target="_blank">Planning & Research</a>
+
+<a class="doc-btn" href="documents/weekly-diary.pdf" target="_blank">Weekly Project Diary</a>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p><b>Yuliia Antonova</b></p>
+
+<p>
+Email: <a href="mailto:C00301431@setu.ie">C00301431@setu.ie</a>
+</p>
+<p> Portfolio: <a href="https://yuliia79antonova.github.io/yuliia-antonova-portfolio/">View My Portfolio</a></p>
+
+</div>
+
+</section>
+
+<footer>
+
+Pira Animation Project — 2026
+
+</footer>
+
+</body>
+</html>
